@@ -14,19 +14,30 @@
              <h1 title="Menu" align="center" style="color:rgb(207, 110, 10)">Menu</h1>
              <ul style="color:white">
                  <li><a href="about.html"><p style="color:white"><u>Sobre o Hospital</u></p></a></li>
-                 <li><a href="cadastro.html"><p style="color:white"><u>cadastro</u></p></a></li>
                  <li><a href="index.html"><p style="color:white"><u>Menu principal</u></p></a></li>
+                 <li><a href="atendimento.html"><p style="color:white"><u>Funcionamento</u></p></a></li>
             </ul>
     </div>
 
         <div class="main">
             <div class="header">
-                      <h1 align="center" style="color: rgb(207, 110, 10);"><a href="about.html"><img title="Melhor hospital da baixada" src="atendimento.png" width="70"></a><br>Horários de Atendimento</h1>
+                    
+                  <h1 align="center" style="color: rgb(207, 110, 10);"><a href="about.html"><img title="Cadastro de Pessoal" src="18146012.png" width="70"></a><br>Cadastro de Pessoal</h1>
+                   
             </div>
             <div class="content">
-               <hgroup>
-                    <h1></h1>
-               </hgroup>
+                <form name="cadastro" value="cadastro" target="_self" method="post" action="#">
+               <fieldset name="informaçoes_pessoais">
+
+                <legend>Informações Pessoais</legend>
+
+                <label>Nome:<input type="text" name="nome" valor="nome" min="10" max="25"></label>
+                <label>Data de nascimento:<input type="date" name="data_nas" value="Data_nas"></label><br>
+                 &nbsp&nbsp&nbsp<label>CPF:<input type="tel" name="cpf" value="cpf"></label>
+                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label>Idade:<input type="number" name="idade" value="idade" min="18" max="100"></label> 
+                    
+
+               </fieldset>
             </div>
     
             <div class="footer">

@@ -27,17 +27,54 @@
             </div>
             <div class="content">
                 <form name="cadastro" value="cadastro" target="_self" method="post" action="#">
-               <fieldset name="informaçoes_pessoais">
+               <fieldset title="coloque suas informaçoes" name="informaçoes_pessoais">
 
-                <legend>Informações Pessoais</legend>
+                  <legend>Dados Pessoais</legend>
 
-                <label>Nome:<input type="text" name="nome" valor="nome" min="10" max="25"></label>
-                <label>Data de nascimento:<input type="date" name="data_nas" value="Data_nas"></label><br>
-                 &nbsp&nbsp&nbsp<label>CPF:<input type="tel" name="cpf" value="cpf"></label>
-                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label>Idade:<input type="number" name="idade" value="idade" min="18" max="100"></label> 
+                    <label>Nome:<input type="text" name="nome" valor="nome" min="10" max="25"></label>
+                    <label>Data de nascimento:<input type="date" name="data_nas" value="Data_nas"></label>
+                    <label>Senha:<input type="password" min="5"></label><br>
+                    &nbsp&nbsp&nbsp<label>CPF:<input type="tel" name="cpf" ></label>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label>Idade:<input type="number" name="idade" value="idade" min="18" max="100"></label> 
+                </fieldset>
+
+               <fieldset title="informações de contato e locação">
+
+                    <legend>formas de contato</legend>
                     
-
+                    <label>Telefone:<input type="tel" name="tel"></label>
+                    <label>E-mail:<input type="email" name="E-mail"></label>
+                    <label>Endereço:<input type="text"></label>
                </fieldset>
+
+              <fieldset title="informações de contato e locação">
+
+                    <legend>Você tem algum desses habitos?</legend>
+                    <label><input type="checkbox" name="saude" value="tabaco">Tabagismo</label>
+                    <label><input type="checkbox" name="saude" value="alcool">Alcolismo</label>
+                    <label><input type="checkbox" name="saude" value="drogasi">Usuário de Drogas</label>
+                    <label><input type="checkbox" name="saude" value="ind">Consumo de Industrializados</label>
+                    <label><input type="checkbox" name="saude" value="anal">Consumo exagerado de analgesicos</label><br>
+                     
+                    <p>Pratica alguma atividade física??<p>
+                    <label><input type="radio" name="treino" value="sim">Sim</label>                   
+                    <label><input type="radio" name="treino" value="não">Não</label>
+               </fieldset>
+               <fieldset>
+                <legend>Mais informaçoes</legend>
+               <p>Qual a sua Profissão?</p>
+               <select>
+                 <option selected value>Selecione alguma Opção</option>
+                 <option valor="TI">Tecnico em TI</option>
+                 <option valor="Policial">Policial</option>
+                 <option valor="Médico">Médico</option>
+                 <option valor="Outros">Outros</option>
+               </select>
+               <p>Coloque uma Observação:</p>
+               <label><textarea name="assunto">Olá</textarea></label>
+               </fieldset><br>
+               &nbsp<button type="submit">Enviar</button>
+               &nbsp&nbsp&nbsp<button type="reset">Resetar</button>
             </div>
     
             <div class="footer">
